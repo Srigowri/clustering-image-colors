@@ -104,7 +104,6 @@ def get_points(img):
     return points
 
 
-
 def kmeans(points, k, min_diff):
     """This function implements k means algorithm to find centers of 3 clusters.
     
@@ -168,5 +167,5 @@ def calculate_center(points, n):
     return Point([(v / plen) for v in vals], n, 1)
 
 
-
-print(main())
+if __name__ == "__main__":
+    main()
